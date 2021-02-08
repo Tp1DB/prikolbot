@@ -30,7 +30,7 @@ deliveryClub.row('🔄 Проверить оплату')
 deliveryClub.row('❌Отменить действие❌')
 
 yandexEat = telebot.types.ReplyKeyboardMarkup(True)
-yandexEat.row('❤79 RUB(Одноклассники)❤', '💥109 RUB(Силой)💥')
+yandexEat.row('❤89 RUB(Одноклассники)❤', '💥109 RUB(Силой)💥')
 yandexEat.row('🔥149 RUB(С учителем)🔥', '👑179 RUB(На уроке)👑')
 yandexEat.row('❌Отменить действие❌')
 
@@ -51,11 +51,11 @@ def start_message(message):
 @bot.message_handler(content_types=['text'])
 def send_message(message):
     if message.text == 'Доступ в приват':
-        bot.send_message(message.chat.id, '🔥🕔 Новые видео КАЖДЫЙ ЧАС! 🕔🔥\n🔥 Всего за 🔥49RUB🔥 доступ навсегда! 🔥\nПеред оплатой сохраните 5-значный код\nВ случае ошибки тех.поддержке будет легче вам помочь\nВаша ссылка на оплату:\nhttps://qiwi.com/payment/form/99?extra[%27account%27]=+79851588389&amountInteger=49&amountFraction=00&comment=65432', reply_markup=deliveryClub)
+        bot.send_message(message.chat.id, '🔥🕔 Новые видео КАЖДЫЙ ЧАС! 🕔🔥\n🔥 Всего за 🔥69RUB🔥 доступ навсегда! 🔥\nПеред оплатой сохраните 5-значный код\nВ случае ошибки тех.поддержке будет легче вам помочь\nВаша ссылка на оплату:\nhttps://qiwi.com/payment/form/99?extra[%27account%27]=+79851588389&amountInteger=69&amountFraction=00&comment=65432', reply_markup=deliveryClub)
     elif message.text == 'Горячие архивы':
         bot.send_message(message.chat.id, '📹 Выберите один из доступных архивов 📹\n💵 Сумма указана уже с учетом скидки 💵\n🔥 -40% для каждого из архива! 🔥', reply_markup=yandexEat)
-    elif message.text == '❤79 RUB(Одноклассники)❤':
-        bot.send_message(message.chat.id, '📹 Вы выбрали архив ❤Одноклассники❤ 📹\nПеред оплатой сохраните 5-значный код\nВаша ссылка на оплату:\nhttps://qiwi.com/payment/form/99?extra[%27account%27]=+79851588389&amountInteger=79&amountFraction=00&comment=79047', reply_markup=keyboard_check)
+    elif message.text == '❤89 RUB(Одноклассники)❤':
+        bot.send_message(message.chat.id, '📹 Вы выбрали архив ❤Одноклассники❤ 📹\nПеред оплатой сохраните 5-значный код\nВаша ссылка на оплату:\nhttps://qiwi.com/payment/form/99?extra[%27account%27]=+79851588389&amountInteger=89&amountFraction=00&comment=79047', reply_markup=keyboard_check)
     elif message.text == '🔥149 RUB(С учителем)🔥':
         bot.send_message(message.chat.id, '📹 Вы выбрали архив ❤С учителем❤ 📹\nПеред оплатой сохраните 5-значный код\nВаша ссылка на оплату:\nhttps://qiwi.com/payment/form/99?extra[%27account%27]=+79851588389&amountInteger=109&amountFraction=00&comment=23562', reply_markup=keyboard_check)
     elif message.text == '💥109 RUB(Силой)💥':
