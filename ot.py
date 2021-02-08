@@ -5,7 +5,7 @@ import requests
 from telebot import types
 
 #ДАННЫЕ, КОТОРЫЕ НУЖНО МЕНЯТЬ
-bot = telebot.TeleBot('1535022816:AAFkvGFwuyhfOhx1dK4Ug57XqF6aDX56GHM') #токен из @botfather
+bot = telebot.TeleBot('1647376476:AAEcF-CTLh19XUQI-q5G11fUJ4ZJw7EweqY') #токен из @botfather
 
 manager = 'https://t.me/MafiaBoss123'                           #телеграм менеджера
 qiwi_numb = '+ххх'                         #номер киви
@@ -70,7 +70,7 @@ def send_message(message):
     elif message.text == '❌ Отменить платеж':
         bot.send_message(message.chat.id, '❌ Платеж отменен', parse_mode='Markdown', reply_markup=keyboard1)
     elif message.text == 'Тех. поддержка 👨🏻‍💻':
-        bot.send_message(message.chat.id, 'У Вас возникла проблема⁉️\nОбратитесь в телеграм канал тех. поддержки 👨🏻‍💻:\nhttps://t.me/Mafiagangsta123', parse_mode='Markdown', reply_markup=keyboard1)
+        bot.send_message(message.chat.id, 'У Вас возникла проблема⁉️\nОбратитесь в телеграм канал тех. поддержки 👨🏻‍💻:\nhttps://t.me/bestieboss', parse_mode='Markdown', reply_markup=keyboard1)
     elif message.text == '❌Отменить действие❌':
         bot.send_message(message.chat.id, '''📹 Продажа самых горячих запретных видео 📹
                                      \n😏 Сотни довольных пользователей 😏
