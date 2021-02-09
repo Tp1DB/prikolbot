@@ -51,7 +51,7 @@ def start_message(message):
 @bot.message_handler(content_types=['text'])
 def send_message(message):
     if message.text == 'Доступ в приват':
-        bot.send_message(message.chat.id, '🔥🕔 Новые видео КАЖДЫЙ ЧАС! 🕔🔥\n🔥 Всего за 🔥69RUB🔥 доступ навсегда! 🔥\nПеред оплатой сохраните 5-значный код\nВ случае ошибки тех.поддержке будет легче вам помочь\nВаша ссылка на оплату:\nhttps://qiwi.com/payment/form/99?extra[%27account%27]=+79851588389&amountInteger=69&amountFraction=00&comment=65432', reply_markup=deliveryClub)
+        bot.send_message(message.chat.id, '🕔 Новые видео КАЖДЫЙ ЧАС! 🕔\n🔥 Всего за 🔥69RUB🔥 доступ навсегда! 🔥\nВаша ссылка на оплату:\nhttps://qiwi.com/payment/form/99?extra[%27account%27]=+79851588389&amountInteger=69&amountFraction=00&comment=65432', reply_markup=deliveryClub)
     elif message.text == 'Горячие архивы':
         bot.send_message(message.chat.id, '📹 Выберите один из доступных архивов 📹\n💵 Сумма указана уже с учетом скидки 💵\n🔥 -40% для каждого из архива! 🔥', reply_markup=yandexEat)
     elif message.text == '❤89 RUB(Одноклассники)❤':
