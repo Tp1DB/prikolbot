@@ -5,7 +5,7 @@ import requests
 from telebot import types
 
 #ДАННЫЕ, КОТОРЫЕ НУЖНО МЕНЯТЬ
-bot = telebot.TeleBot('1636741843:AAFGsiJKjGsEeSxB5CUTHNKJn8j9jsnW3BY') #токен из @botfather
+bot = telebot.TeleBot('1673734200:AAFN5_Tq-1kOo_BzkiV04q47taPsrCFvv') #токен из @botfather
 
 manager = ''                           #телеграм менеджера
 qiwi_numb = '+ххх'                         #номер киви
@@ -45,7 +45,7 @@ def start_message(message):
                                      \n
                                      \n✨59 рублей за доступ в приват канал, которых на данный момент существует уже около ✨15шт., и архивы от ✨89 рублей и до ✨179 рублей... \nГде ты такие низкие цены еще увидишь?)
                                      \nВыбирай то, что тебя привлекло больше, с помощью кнопок снизу.
-                                     \n⭐️Всё честно и прозрачно, вот пруф:\nhttps://t.me/joinchat/UyiRYV14sIvG5SRw
+                                     \n⭐️Всё честно и прозрачно, вот пруф:\nhttps://t.me/joinchat/SVITiEaeP6WzTNiC
                                      \nТех. поддержка и бот работает 24/7.
                                      \n''', reply_markup=keyboard1, parse_mode= "Markdown")
 @bot.message_handler(content_types=['text'])
@@ -77,7 +77,7 @@ def send_message(message):
                                      \n
                                      \n✨59 рублей за доступ в приват канал, которых на данный момент существует уже около ✨15шт., и архивы от ✨89 рублей и до ✨179 рублей... \nГде ты такие низкие цены еще увидишь?)
                                      \nВыбирай то, что тебя привлекло больше, с помощью кнопок снизу.
-                                     \n⭐️Всё честно и прозрачно, вот пруф:\nhttps://t.me/joinchat/UyiRYV14sIvG5SRw
+                                     \n⭐️Всё честно и прозрачно, вот пруф:\nhttps://t.me/joinchat/SVITiEaeP6WzTNiC
                                      \nТех. поддержка и бот работает 24/7.
                                      \n''', reply_markup=keyboard1, parse_mode= "Markdown")
     else: bot.send_message(message.chat.id, 'Бот не отвечает на обычные сообщения', reply_markup=keyboard1)    
