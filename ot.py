@@ -23,7 +23,7 @@ markdown = """
 keyboard1 = telebot.types.ReplyKeyboardMarkup(True)
 keyboard1.row('Доступ в приват')
 keyboard1.row('Горячие архивы')
-
+keyboard1.row('Тех. поддержка 👨🏻‍💻')
 
 deliveryClub = telebot.types.ReplyKeyboardMarkup(True)
 deliveryClub.row('🔄 Проверить оплату')
@@ -47,7 +47,6 @@ def start_message(message):
                                      \nВыбирай то, что тебя привлекло больше, с помощью кнопок снизу.
                                      \n⭐️Всё честно и прозрачно, вот пруф:\nhttps://t.me/joinchat/VfZbsAEwixZz8CJ4
                                      \nТех. поддержка и бот работает 24/7.
-                                     \nТелеграм канал тех. поддержки 👨🏻‍💻:\nhttps://t.me/sladkayavata_helper
                                      \n''', reply_markup=keyboard1, parse_mode= "Markdown")
 @bot.message_handler(content_types=['text'])
 def send_message(message):
@@ -80,7 +79,6 @@ def send_message(message):
                                      \nВыбирай то, что тебя привлекло больше, с помощью кнопок снизу.
                                      \n⭐️Всё честно и прозрачно, вот пруф:\nhttps://t.me/joinchat/VfZbsAEwixZz8CJ4
                                      \nТех. поддержка и бот работает 24/7.
-                                     \nТелеграм канал тех. поддержки 👨🏻‍💻:\nhttps://t.me/sladkayavata_helper
                                      \n''', reply_markup=keyboard1, parse_mode= "Markdown")
     else: bot.send_message(message.chat.id, 'Бот не отвечает на обычные сообщения', reply_markup=keyboard1)    
 
